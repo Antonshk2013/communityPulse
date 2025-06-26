@@ -18,6 +18,7 @@ class PollService:
                 "start_date": validated_data.start_date,
                 "end_date": validated_data.end_date,
                 "is_active": validated_data.is_active,
+                "category_id": validated_data.category_id,
                 "is_anonymous": validated_data.is_anonymous,
             }
 

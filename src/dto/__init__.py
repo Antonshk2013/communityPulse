@@ -14,6 +14,11 @@ from src.dto.poll import (
     PollOptionResponseDTO
 )
 
+from src.dto.category import (
+    CategoryRequestDTO,
+    CategoryResponseDTO
+)
+
 __all__ = (
     "BaseDTO",
     "TimestampDTOMixin",
@@ -26,5 +31,8 @@ __all__ = (
     "PollResponseDTO",
     "ShortInfoPollResponseDTO",
     "PollUpdateRequestDTO",
-    "PollOptionResponseDTO"
+    "PollOptionResponseDTO",
+
+    "CategoryRequestDTO",
+    "CategoryResponseDTO"
 )

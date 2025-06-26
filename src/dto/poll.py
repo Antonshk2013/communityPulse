@@ -29,6 +29,7 @@ class PollRequestDTO(BaseDTO):
     end_date: datetime
     is_active: bool = True
     is_anonymous: bool = True
+    category_id: Optional[int] = None
     options: list[PollOptionRequestDTO] = Field(
         min_length=2
     )
@@ -74,6 +75,7 @@ class PollResponseDTO(BaseDTO, IdDTOMixin, TimestampDTOMixin):
     end_date: datetime
     is_active: bool
     is_anonymous: bool
+    category_id: Optional[int] = None
     options: list[PollOptionResponseDTO] = Field(
         default_factory=list
     )
@@ -83,3 +85,4 @@ class ShortInfoPollResponseDTO(BaseDTO, IdDTOMixin):
     title: str
     start_date: datetime
     end_date: datetime
+    category_id: Optional[int] = None
