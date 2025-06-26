@@ -5,6 +5,7 @@ from flask import request, jsonify
 from http import HTTPStatus
 
 
+#Тут не понятно что и откуда взялось
 @dataclass
 class QueryParamSpec:
     """Спецификация query-параметра."""
